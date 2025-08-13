@@ -1,5 +1,7 @@
-# DocInsightAI
-This project is an interactive Document Analyzer that uses Retrieval-Augmented Generation (RAG) to answer questions about any document you provide. It reads a serialized text version of your document and provides answers with reasoning, page numbers, and data sources. Each answer is also evaluated for correctness and quality.
+
+# Document Analyzer (RAG with Gemini)
+
+This project is an interactive Document Analyzer that uses Retrieval-Augmented Generation (RAG) with Google's Gemini LLM to answer questions about any document you provide. It reads a serialized text version of your document and provides answers with reasoning, page numbers, and data sources. Each answer is also evaluated for correctness and quality.
 
 ## Features
 - Extracts and uses document content from a text file
@@ -23,8 +25,8 @@ This project is an interactive Document Analyzer that uses Retrieval-Augmented G
    pip install google-generativeai python-dotenv pandas
    ```
 3. **Prepare your document:**
-   - Convert your PDF or other document to a text file (e.g., `serialized_pdf.txt`).
-   - Place it in the project directory.
+   - Run the serialization script `document_serialize.py` (previously `documentingestion.py`) to convert your PDF or other document to a text file (e.g., `serialized_pdf.txt`).
+   - Place the generated `serialized_pdf.txt` in the project directory.
 4. **Set up your `.env` file:**
    - Create a `.env` file in the project root with:
      ```env
